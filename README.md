@@ -9,18 +9,19 @@ There is a collection of my assignments. This undergraduate course is "Principle
 ## 2 Comments
 
 ### 2.1 Theory Homework
-自己做。
 
-## 2.2 Lab Assignments
+自己动手，丰衣足食。
 
-### 2.2.1 Assignment 1
+### 2.2 Lab Assignments
+
+#### 2.2.1 Assignment 1
 用C++编写程序，将算术表达式转化为逆波兰表达式。内容详见报告。
 
-### 2.2.2 Assignment 2
+#### 2.2.2 Assignment 2
 用C++编写程序，将表达式转化为语法树形式。内容详见报告。
 
-### 2.2.3 Assignment 3
+#### 2.2.3 Assignment 3
 扩充已有的样例语言TINY，为扩展TINY语言TINY+构造词法分析和语法分析程序。内容详见报告。
 
-### 2.2.4 Assignment 4
+#### 2.2.4 Assignment 4
 构造TINY+的语义分析程序并生成中间代码。内容详见报告。
