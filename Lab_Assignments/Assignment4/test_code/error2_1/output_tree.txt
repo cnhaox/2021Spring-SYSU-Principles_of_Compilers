@@ -1,0 +1,96 @@
+Program
+|__ FuntionDecl
+    |__ Type
+    |   |__ Factor: (INT, INT)
+    |__ Factor: (MAIN, MAIN)
+    |__ Factor: (ID, f1)
+    |__ Factor: (LP, ()
+    |__ FormalParams
+    |__ Factor: (RP, ))
+    |__ Block
+        |__ Factor: (BEGIN, BEGIN)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (INT, INT)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, x)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (NUMBER, 5)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (BOOL, BOOL)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, y)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (TRUE, TRUE)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ ReadStmt
+        |       |__ Factor: (READ, READ)
+        |       |__ Factor: (LP, ()
+        |       |__ Factor: (ID, y)
+        |       |__ Factor: (COMMA, ,)
+        |       |__ Factor: (STRING, "symbol")
+        |       |__ Factor: (RP, ))
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ Block
+        |       |__ Factor: (BEGIN, BEGIN)
+        |       |__ Statement
+        |       |   |__ LocalVarDecl
+        |       |       |__ Type
+        |       |       |   |__ Factor: (BOOL, BOOL)
+        |       |       |__ AssignExpr
+        |       |       |   |__ Factor: (ID, y)
+        |       |       |   |__ Factor: (ASSIGN, :=)
+        |       |       |   |__ BoolMultiExpr
+        |       |       |       |__ BoolMidExpr
+        |       |       |           |__ BoolExpression
+        |       |       |               |__ Expression
+        |       |       |                   |__ MultiplicativeExpr
+        |       |       |                       |__ PrimaryExpr
+        |       |       |                           |__ Factor: (FALSE, FALSE)
+        |       |       |__ Factor: (SEMICOLON, ;)
+        |       |__ Factor: (END, END)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (REAL, REAL)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, x)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (NUMBER, 6.4)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ ReturnStmt
+        |       |__ Factor: (RETURN, RETURN)
+        |       |__ BoolMultiExpr
+        |       |   |__ BoolMidExpr
+        |       |       |__ BoolExpression
+        |       |           |__ Expression
+        |       |               |__ MultiplicativeExpr
+        |       |                   |__ PrimaryExpr
+        |       |                       |__ Factor: (NUMBER, 0)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Factor: (END, END)

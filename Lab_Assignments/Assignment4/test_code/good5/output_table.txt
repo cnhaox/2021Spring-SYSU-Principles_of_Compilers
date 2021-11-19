@@ -1,0 +1,6 @@
+ST_HEAD VT_ANY NULL NULL
+ST_FUNC VT_INT (ID, f1) #F0
+        ST_HEAD VT_ANY NULL NULL
+        ST_VAR VT_INT (ID, x) #V0
+        ST_VAR VT_REAL (ID, y) #V1
+        ST_VAR VT_INT (ID, z) #V2

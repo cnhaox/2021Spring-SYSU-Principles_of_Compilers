@@ -1,0 +1,12 @@
+/** good5.tinyplus **/
+/** This is a TINY+ program without bug. **/
+INT MAIN f1() 
+BEGIN
+    INT x:=4;
+    REAL y:=-x*3;
+    INT z:=x-y;
+    IF (!x)
+        RETURN 0;
+    ELSE
+        RETURN 1;
+END

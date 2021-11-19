@@ -1,0 +1,13 @@
+/** error2_1.tinyplus **/
+/** This is a TINY+ program with bug(s). **/
+INT MAIN f1() 
+BEGIN
+    INT x:=5;
+    BOOL y:=TRUE;
+    READ(y, "symbol");
+    BEGIN
+        BOOL y:=FALSE;
+    END
+    REAL x:=6.4;
+    RETURN 0;
+END

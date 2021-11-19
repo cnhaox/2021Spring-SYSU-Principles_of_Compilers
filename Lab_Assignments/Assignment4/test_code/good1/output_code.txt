@@ -1,0 +1,46 @@
+Label #F0
+    get #V1
+    get #V0
+    #V2 = 10
+Label #L0
+    if #V2 >= #V0 goto #L2
+    #TV0 = false
+    goto #L3
+Label #L2
+    #TV0 = true
+Label #L3
+    ifFalse #TV0 goto #L1
+    #V2 = #V2 % 2
+    goto #L0
+Label #L1
+    #TV1 = #V2 + #V1
+    return #TV1
+Label #F1
+Label MAIN
+    #V3 = True
+    #V4 = 5
+    #V6 = 4.521
+    if 5 > 4 goto #L5
+    #TV2 = false
+    goto #L6
+Label #L5
+    #TV2 = true
+Label #L6
+    ifFalse #TV2 goto #L4
+    #TV3 = #V4 + 3
+    #V4 = #TV3 * 4
+    goto #L7
+Label #L4
+    read #V5, "input y"
+    #TV4 = #V5 - 3
+    #V6 = (real)#TV4
+Label #L7
+    param #V4
+    param #V5
+    #TV5 = call #F0, 2
+    param #V5
+    param #V4
+    #TV6 = call #F0, 2
+    #V7 = #TV5 + #TV6
+    write #V7, "output z"
+    return 0

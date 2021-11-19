@@ -1,0 +1,25 @@
+/** good8.tinyplus **/
+/** This is a TINY+ program without bug. **/
+REAL calculate(REAL x)
+BEGIN
+    IF (!x)
+        RETURN (x+1)*(-2*x);
+    RETURN x*x;
+END
+
+BOOL isBigger(INT x, INT y)
+BEGIN
+    IF (calculate(x)>calculate(y))
+        RETURN TRUE;
+    ELSE
+        RETURN FALSE;
+END
+
+INT MAIN f1() 
+BEGIN
+    INT x:=4;
+    REAL y:=-x*3;
+    WHILE (isBigger(x,y))
+        x:=x-1;
+    RETURN x;
+END

@@ -1,0 +1,7 @@
+/** error2_2.tinyplus **/
+/** This is a TINY+ program with bug(s). **/
+INT MAIN f1(INT x,BOOL z,REAL x) 
+BEGIN
+    BOOL y:=TRUE;
+    RETURN 0;
+END

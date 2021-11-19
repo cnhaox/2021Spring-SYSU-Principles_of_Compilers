@@ -1,0 +1,6 @@
+Label #F0
+Label MAIN
+    #V0 = 5
+    #V1 = True
+    read #V1, "symbol"
+    #V2 = False

@@ -1,0 +1,11 @@
+/** error4.tinyplus **/
+/** This is a TINY+ program with bug(s). **/
+INT MAIN f1() 
+BEGIN
+    INT x:=4;
+    BOOL y:=!x;
+    IF (y > 0)
+    BEGIN
+        x := x-1;
+    END
+END

@@ -1,0 +1,290 @@
+Program
+|__ FuntionDecl
+|   |__ Type
+|   |   |__ Factor: (INT, INT)
+|   |__ Factor: (ID, f2)
+|   |__ Factor: (LP, ()
+|   |__ FormalParams
+|   |   |__ FormalParam
+|   |   |   |__ Type
+|   |   |   |   |__ Factor: (INT, INT)
+|   |   |   |__ Factor: (ID, x)
+|   |   |__ Factor: (COMMA, ,)
+|   |   |__ FormalParam
+|   |       |__ Type
+|   |       |   |__ Factor: (INT, INT)
+|   |       |__ Factor: (ID, y)
+|   |__ Factor: (RP, ))
+|   |__ Block
+|       |__ Factor: (BEGIN, BEGIN)
+|       |__ Statement
+|       |   |__ LocalVarDecl
+|       |       |__ Type
+|       |       |   |__ Factor: (INT, INT)
+|       |       |__ AssignExpr
+|       |       |   |__ Factor: (ID, a)
+|       |       |__ Factor: (SEMICOLON, ;)
+|       |__ Statement
+|       |   |__ AssignStmt
+|       |       |__ AssignExpr
+|       |       |   |__ Factor: (ID, a)
+|       |       |__ Factor: (SEMICOLON, ;)
+|       |__ Statement
+|       |   |__ AssignStmt
+|       |       |__ AssignExpr
+|       |       |   |__ Factor: (ID, a)
+|       |       |   |__ Factor: (ASSIGN, :=)
+|       |       |   |__ BoolMultiExpr
+|       |       |       |__ BoolMidExpr
+|       |       |           |__ BoolExpression
+|       |       |               |__ Expression
+|       |       |                   |__ MultiplicativeExpr
+|       |       |                       |__ PrimaryExpr
+|       |       |                           |__ Factor: (NUMBER, 10)
+|       |       |__ Factor: (SEMICOLON, ;)
+|       |__ Statement
+|       |   |__ WhileStmt
+|       |       |__ Factor: (WHILE, WHILE)
+|       |       |__ Factor: (LP, ()
+|       |       |__ BoolMultiExpr
+|       |       |   |__ BoolMidExpr
+|       |       |       |__ BoolExpression
+|       |       |           |__ Expression
+|       |       |           |   |__ MultiplicativeExpr
+|       |       |           |       |__ PrimaryExpr
+|       |       |           |           |__ Factor: (ID, a)
+|       |       |           |__ Factor: (GEQ, >=)
+|       |       |           |__ Expression
+|       |       |               |__ MultiplicativeExpr
+|       |       |                   |__ PrimaryExpr
+|       |       |                       |__ Factor: (ID, x)
+|       |       |__ Factor: (RP, ))
+|       |       |__ Statement
+|       |           |__ AssignStmt
+|       |               |__ AssignExpr
+|       |               |   |__ Factor: (ID, a)
+|       |               |   |__ Factor: (ASSIGN, :=)
+|       |               |   |__ BoolMultiExpr
+|       |               |       |__ BoolMidExpr
+|       |               |           |__ BoolExpression
+|       |               |               |__ Expression
+|       |               |                   |__ MultiplicativeExpr
+|       |               |                       |__ PrimaryExpr
+|       |               |                       |   |__ Factor: (ID, a)
+|       |               |                       |__ Factor: (MOD, %)
+|       |               |                       |__ PrimaryExpr
+|       |               |                           |__ Factor: (NUMBER, 2)
+|       |               |__ Factor: (SEMICOLON, ;)
+|       |__ Statement
+|       |   |__ ReturnStmt
+|       |       |__ Factor: (RETURN, RETURN)
+|       |       |__ BoolMultiExpr
+|       |       |   |__ BoolMidExpr
+|       |       |       |__ BoolExpression
+|       |       |           |__ Expression
+|       |       |               |__ MultiplicativeExpr
+|       |       |               |   |__ PrimaryExpr
+|       |       |               |       |__ Factor: (ID, a)
+|       |       |               |__ Factor: (ADD, +)
+|       |       |               |__ MultiplicativeExpr
+|       |       |                   |__ PrimaryExpr
+|       |       |                       |__ Factor: (ID, y)
+|       |       |__ Factor: (SEMICOLON, ;)
+|       |__ Factor: (END, END)
+|__ FuntionDecl
+    |__ Type
+    |   |__ Factor: (INT, INT)
+    |__ Factor: (MAIN, MAIN)
+    |__ Factor: (ID, f1)
+    |__ Factor: (LP, ()
+    |__ FormalParams
+    |__ Factor: (RP, ))
+    |__ Block
+        |__ Factor: (BEGIN, BEGIN)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (BOOL, BOOL)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, flag)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (TRUE, TRUE)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (INT, INT)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, x)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (NUMBER, 5)
+        |       |__ Factor: (COMMA, ,)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, y)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (REAL, REAL)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, c)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (NUMBER, 4.521)
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ IfStmt
+        |       |__ Factor: (IF, IF)
+        |       |__ Factor: (LP, ()
+        |       |__ BoolMultiExpr
+        |       |   |__ BoolMidExpr
+        |       |       |__ BoolExpression
+        |       |           |__ Expression
+        |       |           |   |__ MultiplicativeExpr
+        |       |           |       |__ PrimaryExpr
+        |       |           |           |__ Factor: (NUMBER, 5)
+        |       |           |__ Factor: (GT, >)
+        |       |           |__ Expression
+        |       |               |__ MultiplicativeExpr
+        |       |                   |__ PrimaryExpr
+        |       |                       |__ Factor: (NUMBER, 4)
+        |       |__ Factor: (RP, ))
+        |       |__ Statement
+        |       |   |__ AssignStmt
+        |       |       |__ AssignExpr
+        |       |       |   |__ Factor: (ID, x)
+        |       |       |   |__ Factor: (ASSIGN, :=)
+        |       |       |   |__ BoolMultiExpr
+        |       |       |       |__ BoolMidExpr
+        |       |       |           |__ BoolExpression
+        |       |       |               |__ Expression
+        |       |       |                   |__ MultiplicativeExpr
+        |       |       |                       |__ PrimaryExpr
+        |       |       |                       |   |__ Factor: (LP, ()
+        |       |       |                       |   |__ BoolMultiExpr
+        |       |       |                       |   |   |__ BoolMidExpr
+        |       |       |                       |   |       |__ BoolExpression
+        |       |       |                       |   |           |__ Expression
+        |       |       |                       |   |               |__ MultiplicativeExpr
+        |       |       |                       |   |               |   |__ PrimaryExpr
+        |       |       |                       |   |               |       |__ Factor: (ID, x)
+        |       |       |                       |   |               |__ Factor: (ADD, +)
+        |       |       |                       |   |               |__ MultiplicativeExpr
+        |       |       |                       |   |                   |__ PrimaryExpr
+        |       |       |                       |   |                       |__ Factor: (NUMBER, 3)
+        |       |       |                       |   |__ Factor: (RP, ))
+        |       |       |                       |__ Factor: (MUL, *)
+        |       |       |                       |__ PrimaryExpr
+        |       |       |                           |__ Factor: (NUMBER, 4)
+        |       |       |__ Factor: (SEMICOLON, ;)
+        |       |__ Factor: (ELSE, ELSE)
+        |       |__ Statement
+        |           |__ Block
+        |               |__ Factor: (BEGIN, BEGIN)
+        |               |__ Statement
+        |               |   |__ ReadStmt
+        |               |       |__ Factor: (READ, READ)
+        |               |       |__ Factor: (LP, ()
+        |               |       |__ Factor: (ID, y)
+        |               |       |__ Factor: (COMMA, ,)
+        |               |       |__ Factor: (STRING, "input y")
+        |               |       |__ Factor: (RP, ))
+        |               |       |__ Factor: (SEMICOLON, ;)
+        |               |__ Statement
+        |               |   |__ AssignStmt
+        |               |       |__ AssignExpr
+        |               |       |   |__ Factor: (ID, c)
+        |               |       |   |__ Factor: (ASSIGN, :=)
+        |               |       |   |__ BoolMultiExpr
+        |               |       |       |__ BoolMidExpr
+        |               |       |           |__ BoolExpression
+        |               |       |               |__ Expression
+        |               |       |                   |__ MultiplicativeExpr
+        |               |       |                   |   |__ PrimaryExpr
+        |               |       |                   |       |__ Factor: (ID, y)
+        |               |       |                   |__ Factor: (SUB, -)
+        |               |       |                   |__ MultiplicativeExpr
+        |               |       |                       |__ PrimaryExpr
+        |               |       |                           |__ Factor: (NUMBER, 3)
+        |               |       |__ Factor: (SEMICOLON, ;)
+        |               |__ Factor: (END, END)
+        |__ Statement
+        |   |__ LocalVarDecl
+        |       |__ Type
+        |       |   |__ Factor: (INT, INT)
+        |       |__ AssignExpr
+        |       |   |__ Factor: (ID, z)
+        |       |   |__ Factor: (ASSIGN, :=)
+        |       |   |__ BoolMultiExpr
+        |       |       |__ BoolMidExpr
+        |       |           |__ BoolExpression
+        |       |               |__ Expression
+        |       |                   |__ MultiplicativeExpr
+        |       |                   |   |__ PrimaryExpr
+        |       |                   |       |__ Factor: (ID, f2)
+        |       |                   |       |__ Factor: (LP, ()
+        |       |                   |       |__ ActualParams
+        |       |                   |       |   |__ BoolMultiExpr
+        |       |                   |       |       |__ BoolMidExpr
+        |       |                   |       |           |__ BoolExpression
+        |       |                   |       |               |__ Expression
+        |       |                   |       |                   |__ MultiplicativeExpr
+        |       |                   |       |                       |__ PrimaryExpr
+        |       |                   |       |                           |__ Factor: (ID, x)
+        |       |                   |       |__ Factor: (RP, ))
+        |       |                   |__ Factor: (ADD, +)
+        |       |                   |__ MultiplicativeExpr
+        |       |                       |__ PrimaryExpr
+        |       |                           |__ Factor: (ID, f2)
+        |       |                           |__ Factor: (LP, ()
+        |       |                           |__ ActualParams
+        |       |                           |   |__ BoolMultiExpr
+        |       |                           |   |   |__ BoolMidExpr
+        |       |                           |   |       |__ BoolExpression
+        |       |                           |   |           |__ Expression
+        |       |                           |   |               |__ MultiplicativeExpr
+        |       |                           |   |                   |__ PrimaryExpr
+        |       |                           |   |                       |__ Factor: (ID, y)
+        |       |                           |   |__ Factor: (COMMA, ,)
+        |       |                           |   |__ BoolMultiExpr
+        |       |                           |       |__ BoolMidExpr
+        |       |                           |           |__ BoolExpression
+        |       |                           |               |__ Expression
+        |       |                           |                   |__ MultiplicativeExpr
+        |       |                           |                       |__ PrimaryExpr
+        |       |                           |                           |__ Factor: (ID, x)
+        |       |                           |__ Factor: (RP, ))
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Statement
+        |   |__ WriteStmt
+        |       |__ Factor: (WRITE, WRITE)
+        |       |__ Factor: (LP, ()
+        |       |__ BoolMultiExpr
+        |       |   |__ BoolMidExpr
+        |       |       |__ BoolExpression
+        |       |           |__ Expression
+        |       |               |__ MultiplicativeExpr
+        |       |                   |__ PrimaryExpr
+        |       |                       |__ Factor: (ID, z)
+        |       |__ Factor: (COMMA, ,)
+        |       |__ Factor: (STRING, "output z")
+        |       |__ Factor: (RP, ))
+        |       |__ Factor: (SEMICOLON, ;)
+        |__ Factor: (END, END)

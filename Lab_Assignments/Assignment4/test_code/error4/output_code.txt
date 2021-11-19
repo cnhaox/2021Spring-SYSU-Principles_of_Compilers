@@ -1,0 +1,9 @@
+Label #F0
+Label MAIN
+    #V0 = 4
+    ifFalse #V0==0 goto #L0
+    #V1 = true
+    goto #L1
+Label #L0
+    #V1 = false
+Label #L1

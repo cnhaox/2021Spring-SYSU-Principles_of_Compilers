@@ -1,0 +1,9 @@
+/** This is a TINY+ program with bug(s). **/
+INT MAIN f() 
+BEGIN
+    BOOL flag:=TRUE;
+    INT 3x:=5;
+    IF (flag)
+        x := (x+3)*4;
+    WRITE (x, "output x"); 
+END

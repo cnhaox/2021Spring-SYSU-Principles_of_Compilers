@@ -1,0 +1,12 @@
+ST_HEAD VT_ANY NULL NULL
+ST_FUNC VT_REAL (ID, calculate) #F0
+        ST_HEAD VT_ANY NULL NULL
+        ST_VAR VT_REAL (ID, x) #V0
+ST_FUNC VT_BOOL (ID, isBigger) #F1
+        ST_HEAD VT_ANY NULL NULL
+        ST_VAR VT_INT (ID, x) #V1
+        ST_VAR VT_INT (ID, y) #V2
+ST_FUNC VT_INT (ID, f1) #F2
+        ST_HEAD VT_ANY NULL NULL
+        ST_VAR VT_INT (ID, x) #V3
+        ST_VAR VT_REAL (ID, y) #V4

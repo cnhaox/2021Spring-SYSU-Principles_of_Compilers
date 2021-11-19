@@ -1,0 +1,27 @@
+/** good1.tinyplus **/
+/** This is a TINY+ program without bug. **/
+INT f2(INT x, INT y ) 
+BEGIN 
+    INT a;
+    a;
+    a := 10;
+    WHILE (a >= x)
+        a := a % 2;
+    RETURN a+y; 
+END 
+INT MAIN f1() 
+BEGIN
+    BOOL flag:=TRUE;
+    INT x:=5, y;
+    REAL c:=4.521;
+    IF (5>4)
+        x := (x+3)*4;
+    ELSE
+    BEGIN
+        READ(y, "input y");
+        c := y - 3;
+    END
+    INT z:= f2(x,y) + f2(y,x);
+    WRITE (z, "output z");
+    RETURN 0;
+END

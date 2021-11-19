@@ -1,0 +1,12 @@
+/** error3.tinyplus **/
+/** This is a TINY+ program with bug(s). **/
+INT MAIN f1() 
+BEGIN
+    INT x:=5;
+    REAL y:=4.3;
+    BEGIN
+        INT z:=x, y;
+        y := x + a;
+    END
+    RETURN 0;
+END

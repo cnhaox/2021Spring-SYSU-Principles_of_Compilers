@@ -1,0 +1,21 @@
+Label #F0
+Label MAIN
+    #V0 = 4
+    #TV0 = minus #V0
+    #TV1 = #TV0 * 3
+    #V1 = (real)#TV1
+    #TV2 = (real)#V0
+    #TV3 = #TV2 - #V1
+    #V2 = (int)#TV3
+    ifFalse #V0==0 goto #L1
+    #TV4 = true
+    goto #L2
+Label #L1
+    #TV4 = false
+Label #L2
+    ifFalse #TV4 goto #L0
+    return 0
+    goto #L3
+Label #L0
+    return 1
+Label #L3
